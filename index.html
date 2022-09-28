@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="full.css">
+    <title>To-do</title>
+</head>
+
+<body>
+    <h1 style=color: rgb(107, 9, 9); font-family: 'Franklin Gothic Medium' , 'Arial Narrow' , Arial, sans-serif;">
+        Todo List</h1>
+    <hr>
+    <h2>How to use</h2>
+    <span>new = "Enter New todo"</span>
+    <span>list= "Listing all your todos"</span>
+    <span>delete= "Deleting your todos"</span>
+    <span>quit= "Exiting"</span>
+
+
+
+
+    <script>
+        let input = prompt("Good Morning Musa ! What would you like to do?")
+        let data = [];
+        
+        while(input != "quit"){
+            if(input === "new"){
+                let newtodo = prompt("Enter New To-do Musa !")
+                data.push(newtodo);
+                console.log(`${newtodo} added to the list`);
+            }
+            else if (input === "list"){
+                console.log("**************")
+                for(let i=0;i<data.length;i++){
+                    console.log(`${i}: ${data[i]}`)
+                }
+                console.log("**************")
+            }
+            else if(input === "delete"){
+                let index = prompt("Musa give me the index you want to delete !");
+                data.splice(index, 1);
+                console.log(`${index} deleted from the list !`)
+            }
+            input = prompt("Please tell me what would you like to do !")
+        }
+        console.log("Bye Musa !! Have a great time ahead")
+
+    </script>
+</body>
+
+</html>

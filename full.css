@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(43, 72, 73);
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+h2{
+    font-size: 4rem;
+}
+span{
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+
+}
+h1{
+    font-size: 4.4rem;
+}
